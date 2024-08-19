@@ -27,7 +27,11 @@ namespace SQL温度风速测试器
 
         private void btn_stop_Click(object sender, EventArgs e)
         {
-            if (!ckb_humidity.Checked && ckb_manner.Checked && ckb_humidity.Checked&&ckb_oxygen.Checked)
+            if (ckb_humidity.Checked || ckb_manner.Checked || ckb_temperature.Checked || ckb_oxygen.Checked)
+            {
+
+            }
+            else
             {
                 MessageBox.Show("必须勾选一个");
                 return;
@@ -60,13 +64,21 @@ namespace SQL温度风速测试器
                 }
 
 
-                //socket.Connect("192.168.124.180", 8016);
+            //socket.Connect("192.168.124.180", 8016);
 
-                //btn_stop.ForeColor = Color.Red;
-  
+            //btn_stop.ForeColor = Color.Red;
 
+
+
+            if (ipt_time.Text == "")
+            {
                 timer1.Interval = 1000;
-                timer1.Tick += Timer1_Tick;
+            }
+            else
+            {
+                timer1.Interval = Convert.ToInt32(ipt_time.Text);
+            }
+            timer1.Tick += Timer1_Tick;
                 timer1.Start();
             //}
             //else
@@ -131,19 +143,11 @@ namespace SQL温度风速测试器
                     mannerList.RemoveAt(0);
                 }
             }
+            Detection(6, data);
 
-            //if (data.Count >= 6 || mannerList.Count>=6|| humidity.Count>=6|| Oxygrnlidt.Count>=6) { 
-            //    
-            //    mannerList.RemoveAt(0);
-            //    humidity.RemoveAt(0);
-            //    Oxygrnlidt.RemoveAt(0);
 
-            //    list.RemoveAt(0);
-            //}
 
-           
 
-           
         }
         Random random = new Random();
         List<double> data = new List<double>();
@@ -173,7 +177,18 @@ namespace SQL温度风速测试器
         //  
 
 
-         
 
+        /// <summary>
+        /// 图标要显示的最大数量
+        /// </summary>
+        /// <param name="num">你要保存多少个数据在图标中显示</param>
+        /// <param name="doulist">存储数据的列表</param>
+        private void Detection(int num, List<double> doulist)
+        {
+            if (doulist.Count >= num)
+            {
+                doulist.RemoveAt(0);
+            }
+        }
     }
 }
