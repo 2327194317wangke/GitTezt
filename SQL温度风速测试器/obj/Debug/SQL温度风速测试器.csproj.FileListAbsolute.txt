@@ -1,0 +1,10 @@
+D:\vs文档\试用\WPFPro\上位机通讯\SQL温度风速测试器\bin\Debug\SQL温度风速测试器.exe.config
+D:\vs文档\试用\WPFPro\上位机通讯\SQL温度风速测试器\bin\Debug\SQL温度风速测试器.exe
+D:\vs文档\试用\WPFPro\上位机通讯\SQL温度风速测试器\bin\Debug\SQL温度风速测试器.pdb
+D:\vs文档\试用\WPFPro\上位机通讯\SQL温度风速测试器\obj\Debug\SQL温度风速测试器.csproj.AssemblyReference.cache
+D:\vs文档\试用\WPFPro\上位机通讯\SQL温度风速测试器\obj\Debug\SQL温度风速测试器.Form1.resources
+D:\vs文档\试用\WPFPro\上位机通讯\SQL温度风速测试器\obj\Debug\SQL温度风速测试器.Properties.Resources.resources
+D:\vs文档\试用\WPFPro\上位机通讯\SQL温度风速测试器\obj\Debug\SQL温度风速测试器.csproj.GenerateResource.cache
+D:\vs文档\试用\WPFPro\上位机通讯\SQL温度风速测试器\obj\Debug\SQL温度风速测试器.csproj.CoreCompileInputs.cache
+D:\vs文档\试用\WPFPro\上位机通讯\SQL温度风速测试器\obj\Debug\SQL温度风速测试器.exe
+D:\vs文档\试用\WPFPro\上位机通讯\SQL温度风速测试器\obj\Debug\SQL温度风速测试器.pdb
